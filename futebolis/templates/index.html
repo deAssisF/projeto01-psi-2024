@@ -1,12 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futebolis</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title % Futebolis {%end block %</title>
 </head>
 <body>
-    Teste
+    <div class="background-preto">
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        Vasco
+                    </div>
+                    <ul class="uL">
+                        <li> <a href="#">Inicio</a></li>
+                        <li> <a href="#">Jogadores</a></li>
+                        <li> <a href="#">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="main-text">
+                    <h1>Vasco da Gama e sua história</h1>
+                    <h2>Em todas as séries(kkkk)</h2>
+                    <div class="main-img">
+                        <img src="{% static 'img/vascodagama.png'%}" alt="VascoLogo">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
