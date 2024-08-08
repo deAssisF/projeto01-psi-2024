@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>{% block title % Futebolis {%end block %</title>
+    <title>{%block title%}Futebolis{%endblock%}</title>
 </head>
 <body>
     <div class="background-preto">
@@ -14,27 +14,71 @@
             <div class="container">
                 <nav>
                     <div class="logo">
-                        Vasco
+                        <img src="{% static 'img/vascodagama.png' %}" alt="30">
+                        Vasco da Gama
                     </div>
                     <ul class="uL">
                         <li> <a href="#">Inicio</a></li>
                         <li> <a href="#">Jogadores</a></li>
                         <li> <a href="#">Sobre</a></li>
                     </ul>
+                    <div class="menu-icon">
+                        <img src="{% static 'img/menu.png' %}" alt="icone menu mob">
+                        
+                    </div>
                 </nav>
             </div>
         </header>
         <main>
             <div class="container">
                 <div class="main-text">
-                    <h1>Vasco da Gama e sua história</h1>
-                    <h2>Em todas as séries(kkkk)</h2>
-                    <div class="main-img">
-                        <img src="{% static 'img/vascodagama.png'%}" alt="VascoLogo">
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    <section class="resultados">
+        <div class="container">
+            <div class="results-text">
+                O Maior do Rio
+            </div>
+            <div class="resultados-numero">
+                <p>
+                    <span> 8 vezes</span> <br>
+                    Campeão Carioca Amador
+                </p>
+                
+                <p>
+                    <span> +50 vezes</span> <br>
+                    Campeão Carioca Profissional
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section class="jogadores-history">
+        <div class="container">
+            <div class="jogadores-img">
+                <img src="{%static 'img/jogadores-imagem.png'%}" alt="Meu time do coração">
+            </div>
+            <div class="jogadoresh-text">
+                <h2>Vasco da Gama e sua história</h2>
+                <p>
+                    O Club de Regatas Vasco da Gama, mais conhecido como Vasco da Gama ou simplesmente Vasco, cujo acrônimo é CRVG, é uma entidade sócio-poliesportiva brasileira com sede na cidade do Rio de Janeiro, fundada em 21 de agosto de 1898 por um grupo de remadores. Inspirados nas celebrações do quarto centenário da descoberta do caminho marítimo para as Índias, ocorrida em 1498, batizaram a nova agremiação com o nome do navegador português que alcançou tal feito, Vasco da Gama. Apesar de ter sido fundado como um "clube de regatas", o Vasco da Gama abrange diversas outras modalidades como atletismo, basquete, futebol de areia e futebol americano, tendo como esporte mais tradicional o futebol. É a agremiação poliesportiva brasileira recordista de medalhas em Jogos Olímpicos (40 no total), com 175 atletas convocados, e em Jogos Paralímpicos (28 no total), sendo reconhecido como clube formador pelo Comitê Paralímpico Brasileiro.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <ul>
+                    <h3>
+                        Vasco da Gama
+                    </h3>
+                </ul>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+            </div>
+        </footer>
 </body>
 </html>
