@@ -27,7 +27,7 @@ body{
 
 .container{
     max-width: 1440px;
-    padding: 50px 5%;
+    padding: 45px 5%;
     margin: 0 auto;
 }
 
@@ -151,7 +151,7 @@ main .container{
 footer{
     color: white;
     background-color: gray;
-    font-size: 45px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;

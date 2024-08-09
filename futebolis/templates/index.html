@@ -18,9 +18,9 @@
                         Vasco da Gama
                     </div>
                     <ul class="uL">
-                        <li> <a href="#">Inicio</a></li>
-                        <li> <a href="#">Jogadores</a></li>
-                        <li> <a href="#">Sobre</a></li>
+                        <li> <a href="{%url 'index'%}">Inicio</a></li>
+                        <li> <a href="{%url 'jogadores'%}">Jogadores</a></li>
+                        <li> <a href="{%url 'sobre'%}">Sobre</a></li>
                     </ul>
                     <div class="menu-icon">
                         <img src="{% static 'img/menu.png' %}" alt="icone menu mob">
@@ -29,6 +29,8 @@
                 </nav>
             </div>
         </header>
+        
+        {% block content %}
         <main>
             <div class="container">
                 <div class="main-text">
@@ -68,6 +70,8 @@
                 </p>
             </div>
         </div>
+        {%endblock%}
+        
         <footer>
             <div class="container">
                 Copyright © 2024
