@@ -1,7 +1,31 @@
 {% extends 'index.html' %}
-{%load static%}
-{%block title%} Jogadores {%endblock%}
+{% load static %}
 
-{%block content%}
+{% block title %}Jogadores{% endblock %}
 
-{%endblock%}
+{% block content %}
+<main>
+    <section class="jogadores">
+        <div class="interface">
+            <h2 class="titulo">JOGADORES</h2>
+            <div class="grid">
+                {% for jogador in jogadores %}
+                    <div class="cards">
+                        <div class="img-box">
+                            <img src="{% static jogador.foto %}" alt="{{ jogador.nome }}">
+                        </div>
+                        <div class="content">
+                            <h3>{{ jogador.nome }}</h3>
+                            <p>
+                                Idade: {{ jogador.idade }} <br>
+                                Local de nascimento: {{ jogador.nascimento }} <br>
+                                Posição: {{ jogador.posicao }}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
